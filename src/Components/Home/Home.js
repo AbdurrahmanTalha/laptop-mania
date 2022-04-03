@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import ReviewsCard from '../ReviewsCard/ReviewsCard';
 import "./Home.css"
 const Home = () => {
@@ -22,11 +23,14 @@ const Home = () => {
                     <img src="https://p3-ofp.static.pub/fes/cms/2021/07/22/icysl39azuqnz4yrv7wc9zopwx8a45492484.png" alt="" className="img-fluid"></img>
                 </div>
             </div>
-            <div className="home-reviews mt-5">
+            <div className="home-reviews mt-5 container">
                 <h2>What Our Customers Says</h2>
-                {
-                    reviews.slice(0, 3).map(review => <ReviewsCard key={review.id} review={review}></ReviewsCard>)
-                }
+                <div className="row">
+                    {
+                        reviews.slice(0, 3).map(review => <ReviewsCard key={review.id} review={review}></ReviewsCard>)
+                    }
+                </div>
+                <Link to="/reviews" className="btn btn-primary">Show more Reviews</Link>
             </div>
         </div>
     );

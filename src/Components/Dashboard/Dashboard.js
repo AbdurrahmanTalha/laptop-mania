@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer, BarChart, Legend, Bar } from 'recharts';
+import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip,  BarChart, Legend, Bar } from 'recharts';
 const Dashbord = () => {
     const [data, setData] = useState([])
     useEffect(() => {
@@ -10,7 +10,7 @@ const Dashbord = () => {
 
     return (
         <div>
-            <div className="row">
+            <div className="row container">
                 <div className="col-md-6">
                     <h2>MONTH WISE SELL</h2>
                     <LineChart width={600} height={300} data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
