@@ -1,0 +1,22 @@
+.margin-top {
+  margin-top: 5rem !important;
+}
+.header-one {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 70px;
+  color: #111827;
+}
+.header-two {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 70px;
+  color: #5247e8;
+}
+
+.home-details {
+  color: #c4bfc3;
+  margin-left: 0;
+  margin-right: 0;
+  width: 90%;
+}
