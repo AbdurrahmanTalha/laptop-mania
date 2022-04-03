@@ -1,15 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import useData from '../../Hook/useData/useData';
 import ReviewsCard from '../ReviewsCard/ReviewsCard';
 import "./Home.css"
 const Home = () => {
-    const [reviews, setReviews] = useState([])
-    useEffect(() => {
-        fetch('reviews.json') 
-            .then(res => res.json())
-            .then(data => setReviews(data))
-    }, [])
-    console.log(reviews)
+    const [reviews, setReviews] = useData()
     return (
         <div>
             <div className="row container mx-5">
