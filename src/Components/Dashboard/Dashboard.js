@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
+import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer, BarChart, Legend, Bar } from 'recharts';
 const Dashbord = () => {
     const [data, setData] = useState([])
     useEffect(() => {
         fetch('dashboardData.json')
             .then(res => res.json())
-        .then(data => setData(data))
+            .then(data => setData(data))
     }, [])
-    
+
     return (
         <div>
             <div className="row">
@@ -24,8 +24,27 @@ const Dashbord = () => {
                 </div>
                 <div className="col-md-6">
                     <h2>Investment VS Revenue</h2>
+                    <BarChart
+                        width={500}
+                        height={300}
+                        data={data}
+                        margin={{
+                            top: 20,
+                            right: 30,
+                            left: 20,
+                            bottom: 5
+                        }}
+                    >
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey="name" />
+                        <YAxis />
+                        <Tooltip />
+                        <Legend />
+                        <Bar dataKey="investment" stackId="a" fill="#8884d8" />
+                        <Bar dataKey="revenue" stackId="a" fill="#82ca9d" />
+                    </BarChart>
                 </div>
-            </div> 
+            </div>
         </div>
     );
 };
