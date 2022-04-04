@@ -1,4 +1,4 @@
-# [Live Site](https://laptopmania.netlify.app/).
+# [Laptop Mania](https://laptopmania.netlify.app/).
 
 [Live Site](https://laptopmania.netlify.app/).
 
