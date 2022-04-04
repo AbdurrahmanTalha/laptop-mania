@@ -8,7 +8,7 @@ const Reviws = () => {
     return (
         <div>
             <div className="home-reviews mt-5">
-                <h2>What Our Customers Says</h2>
+                <h2>What Our Customers Say</h2>
                 <div className="row container d-flex justify-center align-middle margin-right">
                     {
                         reviews.map(review => <ReviewsCard  key={review.id} review={review}></ReviewsCard>)

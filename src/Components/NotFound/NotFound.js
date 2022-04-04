@@ -2,8 +2,9 @@ import React from 'react';
 
 const NotFound = () => {
     return (
-        <div>
-            <h3>The page you are looking for is not found 404</h3>
+        <div className="my-5">
+            <h1>The page you are looking for is not found 404</h1>
+            <img src="https://webdeasy.de/wp-content/uploads/2020/06/404-pages.jpg" alt=""></img>
         </div>
     );
 };
