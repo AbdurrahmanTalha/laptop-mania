@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+// Custome Hook
 const useData = () => {
     const [reviews, setReviews] = useState([])
     useEffect(() => {

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import useData from '../../Hook/useData/useData';
 import ReviewsCard from '../ReviewsCard/ReviewsCard';
 import "./Revies.css"
+// Reviews
 const Reviws = () => {
     const [reviews, setReviews] = useData()
 

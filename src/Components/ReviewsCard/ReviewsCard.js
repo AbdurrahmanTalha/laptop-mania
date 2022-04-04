@@ -2,6 +2,7 @@ import React from 'react';
 import "./ReviewsCard.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
+// Reviews Card Design
 const ReviewsCard = (props) => {
     const { picture, name, comment, rating } = props.review;
     return (
